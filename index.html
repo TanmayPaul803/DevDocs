@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar" id="navBar">
+        <div class="navbarContainer">
+            <a href="#" id="navbarLogo">DEVDocs</a>
+            <div class="navbarToggle" id="mobileMenu"></div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        
+         <ul class="navbarMenu">
+            <li class="navbarItem">
+                <a href="#" class="navbarLinks">Home</a>
+            </li>
+
+            <li class="navbarItem">
+                <a href="#" class="navbarLinks">Tech</a>  
+            </li>
+
+            <li class="navbarBtn">
+                <a href="#" class="button">Sign Up</a> 
+            </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="main">
+        <div class="welcome" >
+           <div class="content">
+               <div data-aos="flip-left" ><h1 class="parallax">We are <span> #DEV_Docs |</span></h1></div>
+                
+           </div>
+        </div>
+    </div>
+
+
+
+    <div class="bodyArea">
+
+
+        <div class="area1" data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-center">
+<!-------------------------------------Card Area------------------------------------------------------------>
+            <div class="container">
+
+                <div class="card" onclick="infoToggle()">
+                    <div class="imgBx">
+                        <img src="Developers\img1.jpg" alt="">
+                    </div>
+                    <div class="bdyContent">
+                        <h2>Tanmay Paul</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente laboriosam tempora assumenda perspiciatis earum aut at, tempore, iste voluptas velit, dicta veritatis ad ipsam vero ratione est maiores ullam?</p>
+                    </div>
+                </div>
+            
+       
+
+
+                <div class="card" onclick="infoToggle2()">
+                    <div class="imgBx">
+                        <img src="Developers\img2.jpg" alt="">
+                    </div>
+                    <div class="bdyContent">
+                    <h2>Tapos Mandal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente laboriosam tempora assumenda perspiciatis earum aut at, tempore, iste voluptas velit, dicta veritatis ad ipsam vero ratione est maiores ullam?</p>
+                </div>
+                </div>
+
+
+        
+                    <div class="card" onclick="infoToggle3()">
+                        <div class="imgBx">
+                        <img src="Developers\img3.jpg" alt="">
+                        </div>
+                        <div class="bdyContent" >
+                        <h2>Debojyoti Ghosh</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente laboriosam tempora assumenda perspiciatis earum aut at, tempore, iste voluptas velit, dicta veritatis ad ipsam vero ratione est maiores ullam?</p>
+                        </div>
+                    </div>
+             </div>
+             <!-------------------------------------Card Area------------------------------------------------------------>
+
+
+             <div class="info transform" id="info1">
+                 <h1 class="devName">Tanmay</h1>
+                 <span class="closeInfo" onclick="infoToggle()">Close</span>
+             </div>
+
+             <div class="info transform" id="info2">
+                 Tapos
+                 <span class="closeInfo" onclick="infoToggle2()" >Close</span>
+                </div>
+
+             <div class="info transform" id="info3">
+                 Debojyoti
+                 <span class="closeInfo" onclick="infoToggle3()" >Close</span>
+            </div>
+        </div>
+
+        <div class="whatWeProvide">
+            
+        </div>
+               
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+       AOS.init();
+        window.addEventListener('scroll',function(){
+            const parallax=document.querySelector('.content ');
+            let scrollPosition=window.pageYOffset;
+
+            parallax.style.transform='translateY(' +scrollPosition * 0.5 +'px)';
+        })
+
+
+        window.addEventListener('scroll',function(){
+            const parallax2=document.querySelector('.welcome');
+            let scrollPosition2 =window.pageYOffset;
+
+            parallax2.style.transform='translateY(' +scrollPosition2 * .5 +'px)'
+        })
+
+   </script>
+    
+   <script src="app.js"></script>
+</body>
+</html>
